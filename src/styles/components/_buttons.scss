@@ -4,7 +4,7 @@
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap; //fazendo com que a linha não se quebre
 
     &--primary{
         color: #fff;
