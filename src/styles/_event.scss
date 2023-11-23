@@ -1,8 +1,33 @@
+@use 'variaveis';
+
 .event{
     padding: 80px 0;
-    background-image: linear-gradient(#1B6CA7, #442BDB); //fazendo o efeito degradê
+
+    &--frontend{
+        background-image: linear-gradient(variaveis.$blue1, variaveis.$blue2); //fazendo o efeito degradê/gradiente
+    }
+
+    &--ux--ui{
+        background-image: linear-gradient(variaveis.$blue2, variaveis.$pink); //fazendo o efeito degradê/gradiente
+    }
+
+    &--data-science{
+        background-image: linear-gradient(variaveis.$pink, variaveis.$yellow); //fazendo o efeito degradê/gradiente
+    }
+
+    &--backend{
+        background-image: linear-gradient(variaveis.$yellow, variaveis.$pink); //fazendo o efeito degradê/gradiente
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse; //invertendo a imagem e o texto
+        }
+    }
+
     .container{
         display: flex;
+        gap: 40px;
     }
 
     &__image{
@@ -10,8 +35,6 @@
     }
 
     &__details{
-        margin-right: 40px;
-
         &__title{
             font-size: 18px;
             font-weight: bold;
